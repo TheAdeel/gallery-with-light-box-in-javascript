@@ -1,3 +1,6 @@
+// Kindly check classes in html file to understand variables
+const gallery = document.querySelector(".gallery");
+console.log(gallery);
 const tabBtns = document.querySelectorAll(".tab");
 const galleryItems = document.querySelectorAll(".gallery .item");
 const galleryItemImg = document.querySelectorAll(".gallery .item img");
@@ -43,6 +46,7 @@ for (let currentImage of galleryItemImg) {
     const clickedImage = e.target.getAttribute("src");
     lightbox.style.display = "flex";
     lightboxImg.src = clickedImage;
+    lightbox.querySelector(".items").append(...galleryItems);
   });
 }
 
@@ -52,6 +56,7 @@ window.addEventListener("click", (e) => {
     e.target.getAttribute("class") === "lightbox" ||
     e.target.getAttribute("class") === "cross"
   ) {
+    gallery.append(...galleryItems);
     lightbox.style.display = "none";
   }
 });
