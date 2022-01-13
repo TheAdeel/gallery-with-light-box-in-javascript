@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tabs  -->
+      <div class="tabs">
+        <button class="tab active" data-tabs="all">All</button>
+        <button class="tab" data-tabs="bikes">Bikes</button>
+        <button class="tab" data-tabs="cars">Cars</button>
+        <button class="tab" data-tabs="aeroplanes">Aeroplanes</button>
+      </div>
+      <!-- Gallery -->
+      <div class="gallery">
+        <div class="item" data-filter="bikes">
+          <img src="images/bik1.jpg" alt="" />
+        </div>
+        <div class="item" data-filter="bikes">
+          <img src="images/bike2.jpg" alt="" />
+        </div>
+        <div class="item" data-filter="cars">
+          <img src="images/car1.jpg" alt="" />
+        </div>
+        <div class="item" data-filter="cars">
+          <img src="images/car2.jpg" alt="" />
+        </div>
+        <div class="item" data-filter="cars">
+          <img src="images/car3.jpg" alt="" />
+        </div>
+        <div class="item" data-filter="aeroplanes">
+          <img src="images/air1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Lightbox -->
+    <div class="lightbox">
+      <div class="lightbox-image">
+        <div class="cross">X</div>
+        <img src="images/car2.jpg" alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
